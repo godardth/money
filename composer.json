@@ -1,14 +1,14 @@
 {
-    "name": "mathiasverraes/money",
+    "name": "godardth/money",
     "description": "PHP implementation of Fowler's Money pattern",
     "type": "library",
     "keywords": [ "Money", "Value Object", "Generic Sub-domain" ],
-    "homepage": "http://verraes.net/2011/04/fowler-money-pattern-in-php/",
+    "homepage": "http://www.fullplanner.com",
     "license": "MIT",
     "authors": [
         {
-            "name": "Mathias Verraes",
-            "email": "mathias@verraes.net"
+            "name": "Theophile Godard",
+            "email": "theo.godard@gmail.com"
         }
     ],
     "require": {
