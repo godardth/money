@@ -167,6 +167,12 @@ class Money
     {
         $this->assertSameCurrency($addend);
 
+        if($this->isSameCurrency($addend)) {
+            $addend->convert($this->currency);
+        }
+
+        $this->assertSameCurrency($addend);
+        
         return new self($this->amount + $addend->amount, $this->currency);
     }
 
@@ -302,5 +308,9 @@ class Money
         $units .= isset($matches['decimal2']) ? $matches['decimal2'] : "0";
 
         return (int) $units;
+    }
+    
+    public static function convert( $currency ) {
+        return Money($this->amount, $currency);
     }
 }
