@@ -166,7 +166,7 @@ class Money
     public function add(Money $addend)
     {
 
-        if($this->isSameCurrency($addend))
+        if(!$this->isSameCurrency($addend))
             $addend = $addend->convert($this->currency);
 
         $this->assertSameCurrency($addend);
