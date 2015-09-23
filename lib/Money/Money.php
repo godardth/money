@@ -309,6 +309,6 @@ class Money
     }
     
     public static function convert( $currency ) {
-        return Money($this->amount, $currency);
+        return self::__construct($this->amount, $currency);
     }
 }
